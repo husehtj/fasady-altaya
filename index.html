@@ -4,843 +4,690 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Мокрый Фасад Алтая — Барнаул и Алтайский край</title>
+<!-- Подтверждение Яндекс Вебмастера -->
+<meta name="yandex-verification" content="a95fd32855d1021" />
+
+<title>Мокрый Фасад Алтая — утепление и отделка фасадов в Барнауле</title>
+
+<meta name="description" content="Мокрый фасад в Барнауле и Алтайском крае. Утепление, армирование, декоративная штукатурка Короед и Шуба, покраска фасадов. Связь напрямую с мастером.">
+
+<meta name="keywords" content="мокрый фасад Барнаул, фасад Барнаул, утепление фасада, декоративная штукатурка, короед, шуба, отделка фасада, фасад Алтайский край">
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
-
-:root{
-  --dark:#0b2d2d;
-  --dark2:#173f3e;
-  --orange:#f28b00;
-  --orange-light:#ffad32;
-  --light:#f4f3ef;
-  --white:#ffffff;
-  --text:#193333;
-  --gray:#697675;
-}
-
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Inter,Arial,sans-serif;
-  background:var(--light);
-  color:var(--text);
-  overflow-x:hidden;
-}
-
-img{
-  max-width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#18252a;
+    background:#f5f4f0;
+    overflow-x:hidden;
 }
 
 a{
-  text-decoration:none;
+    text-decoration:none;
+    color:inherit;
 }
 
-/* ВЕРХНЯЯ ПОЛОСКА */
+img{
+    max-width:100%;
+    display:block;
+}
 
-.topline{
-  background:#1f3031;
-  color:#ffffff;
-  padding:12px 20px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:45px;
-  flex-wrap:wrap;
-  font-size:13px;
-  font-weight:600;
+/* ВЕРХНЯЯ ПОЛОСА */
+
+.top-bar{
+    background:#16272a;
+    color:#ffffff;
+    text-align:center;
+    padding:13px 20px;
+    font-size:14px;
+    font-weight:600;
 }
 
 /* ШАПКА */
 
 .header{
-  min-height:96px;
-  padding:15px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:25px;
-  background:rgba(255,255,255,.97);
-  position:sticky;
-  top:0;
-  z-index:1000;
-  border-bottom:1px solid #e6e6e6;
+    background:#ffffff;
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.header-inner{
+    max-width:1250px;
+    margin:auto;
+    min-height:95px;
+    padding:15px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
 }
 
 .logo{
-  color:var(--text);
-  font-family:Oswald,sans-serif;
-  font-size:34px;
-  font-weight:700;
-  line-height:.9;
-  min-width:150px;
+    display:flex;
+    flex-direction:column;
+    min-width:160px;
 }
 
-.logo small{
-  display:block;
-  margin-top:8px;
-  color:#bc7618;
-  font-family:Inter,sans-serif;
-  font-size:9px;
-  letter-spacing:1.5px;
-  line-height:1.3;
+.logo-main{
+    font-size:27px;
+    line-height:0.82;
+    font-weight:900;
+    letter-spacing:-1px;
+    text-transform:uppercase;
 }
 
-.header-menu{
-  display:flex;
-  align-items:center;
-  gap:28px;
+.logo-sub{
+    margin-top:13px;
+    font-size:9px;
+    letter-spacing:3px;
+    color:#9b7740;
+    font-weight:bold;
 }
 
-.header-menu a{
-  color:var(--text);
-  font-size:15px;
-  font-weight:700;
-  transition:.2s;
+.nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    font-size:15px;
+    font-weight:700;
 }
 
-.header-menu a:hover{
-  color:var(--orange);
+.nav a{
+    transition:0.2s;
 }
 
-.header-button{
-  background:var(--orange);
-  color:#fff;
-  padding:17px 28px;
-  border-radius:16px;
-  font-weight:800;
-  white-space:nowrap;
-  box-shadow:0 12px 28px rgba(242,139,0,.25);
-  transition:.2s;
+.nav a:hover{
+    color:#d98a00;
 }
 
-.header-button:hover{
-  transform:translateY(-2px);
+.header-btn{
+    background:#f49a00;
+    color:#ffffff;
+    padding:16px 28px;
+    border-radius:13px;
+    font-weight:800;
+    box-shadow:0 10px 25px rgba(244,154,0,0.28);
+    white-space:nowrap;
 }
 
 /* ГЛАВНЫЙ ЭКРАН */
 
 .hero{
-  min-height:760px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  overflow:hidden;
-
-  background-image:
-  linear-gradient(
-    90deg,
-    rgba(4,28,29,.96) 0%,
-    rgba(7,43,42,.90) 43%,
-    rgba(7,43,42,.38) 100%
-  ),
-  url("https://images.pexels.com/photos/7031408/pexels-photo-7031408.jpeg?auto=compress&cs=tinysrgb&w=1800");
-
-  background-size:cover;
-  background-position:center;
+    min-height:700px;
+    background:
+        linear-gradient(90deg, rgba(8,29,31,0.95) 0%, rgba(13,42,43,0.87) 42%, rgba(15,35,35,0.45) 70%, rgba(0,0,0,0.20) 100%),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=90");
+    background-size:cover;
+    background-position:center;
+    color:#ffffff;
+    display:flex;
+    align-items:center;
 }
 
-.hero:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-  radial-gradient(
-    circle at 75% 65%,
-    rgba(242,139,0,.18),
-    transparent 28%
-  );
+.hero-inner{
+    max-width:1250px;
+    width:100%;
+    margin:auto;
+    padding:90px 30px;
 }
 
 .hero-content{
-  width:100%;
-  max-width:1250px;
-  margin:auto;
-  padding:100px 35px;
-  position:relative;
-  z-index:2;
+    max-width:650px;
 }
 
-.hero-label{
-  color:var(--orange-light);
-  font-size:13px;
-  font-weight:800;
-  letter-spacing:2px;
-  margin-bottom:20px;
+.hero-location{
+    color:#e3a33b;
+    font-size:13px;
+    letter-spacing:3px;
+    font-weight:900;
+    margin-bottom:20px;
+    text-transform:uppercase;
 }
 
 .hero h1{
-  max-width:950px;
-  color:#fff;
-  font-family:Oswald,sans-serif;
-  font-size:clamp(52px,7vw,88px);
-  line-height:1.04;
-  text-transform:uppercase;
-}
-
-.hero h1 span{
-  color:#dce7e4;
+    font-size:64px;
+    line-height:1.02;
+    text-transform:uppercase;
+    font-weight:900;
+    margin-bottom:28px;
+    letter-spacing:-1px;
 }
 
 .hero-text{
-  max-width:730px;
-  color:#dce6e3;
-  font-size:20px;
-  line-height:1.7;
-  margin:28px 0;
+    font-size:20px;
+    line-height:1.65;
+    color:#e2e6e5;
+    max-width:600px;
+    margin-bottom:35px;
 }
 
 .hero-buttons{
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:35px;
 }
 
 .btn-main{
-  display:inline-block;
-  background:var(--orange);
-  color:#fff;
-  padding:20px 30px;
-  border-radius:16px;
-  font-size:16px;
-  font-weight:800;
-  box-shadow:0 15px 35px rgba(242,139,0,.3);
+    background:#f49a00;
+    color:#ffffff;
+    padding:19px 30px;
+    border-radius:14px;
+    font-weight:900;
+    display:inline-block;
+    box-shadow:0 10px 28px rgba(244,154,0,0.35);
 }
 
-.btn-secondary{
-  display:inline-block;
-  color:#fff;
-  padding:20px 30px;
-  border-radius:16px;
-  border:1px solid rgba(255,255,255,.4);
-  background:rgba(255,255,255,.08);
-  font-weight:800;
+.btn-second{
+    border:1px solid rgba(255,255,255,0.35);
+    background:rgba(255,255,255,0.08);
+    color:#ffffff;
+    padding:19px 30px;
+    border-radius:14px;
+    font-weight:800;
+    display:inline-block;
 }
 
-.hero-points{
-  display:grid;
-  gap:13px;
-  margin-top:40px;
-  color:#e2ebe8;
-  font-size:15px;
+.hero-list{
+    display:grid;
+    gap:14px;
+    font-size:16px;
+    color:#e0e5e4;
 }
 
-.hero-points div:before{
-  content:"✓";
-  color:var(--orange);
-  font-weight:900;
-  margin-right:12px;
+.hero-list div::before{
+    content:"✓";
+    color:#f0a226;
+    font-weight:900;
+    margin-right:12px;
 }
 
-/* ОБЩИЕ СТИЛИ */
+/* ОБЩИЕ СЕКЦИИ */
+
+.section{
+    padding:95px 30px;
+}
 
 .container{
-  max-width:1250px;
-  margin:auto;
+    max-width:1250px;
+    m
+
+
+argin:auto;
 }
 
 .section-label{
-  color:#bc7618;
-  font-size:12px;
-  font-weight:800;
-  letter-spa
-
-
-cing:2px;
-  margin-bottom:14px;
+    color:#b17a20;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
-h2{
-  font-family:Oswald,sans-serif;
-  font-size:clamp(40px,5vw,65px);
-  line-height:1.08;
-  text-transform:uppercase;
+.section-title{
+    font-size:46px;
+    line-height:1.1;
+    text-transform:uppercase;
+    font-weight:900;
+    margin-bottom:20px;
 }
 
-.section-description{
-  max-width:760px;
-  margin-top:20px;
-  color:var(--gray);
-  font-size:18px;
-  line-height:1.65;
-}
-
-/* О БРИГАДЕ */
-
-.stats{
-  padding:100px 7%;
-  background:#e9eeeb;
-}
-
-.stats-grid{
-  margin-top:50px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:25px;
-}
-
-.stat{
-  border-top:2px solid #c3cbc7;
-  padding-top:20px;
-}
-
-.stat strong{
-  display:block;
-  color:var(--orange);
-  font-family:Oswald,sans-serif;
-  font-size:58px;
-}
-
-.stat span{
-  display:block;
-  color:#657170;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:1px;
-  line-height:1.5;
-  text-transform:uppercase;
+.section-text{
+    max-width:750px;
+    font-size:18px;
+    line-height:1.65;
+    color:#5c6668;
 }
 
 /* УСЛУГИ */
 
 .services{
-  padding:100px 7%;
-  background:var(--dark);
-  color:#fff;
+    background:#ffffff;
 }
 
 .service-grid{
-  margin-top:50px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
 }
 
 .service-card{
-  min-height:280px;
-  padding:30px;
-  border-radius:22px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.1);
-  transition:.25s;
+    background:#f6f5f1;
+    padding:35px 28px;
+    border-radius:18px;
+    border:1px solid #ece9e2;
+    transition:0.25s;
 }
 
 .service-card:hover{
-  transform:translateY(-5px);
-  background:rgba(255,255,255,.1);
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
 }
 
 .service-number{
-  color:var(--orange);
-  font-family:Oswald,sans-serif;
-  font-size:20px;
+    color:#d99319;
+    font-size:13px;
+    font-weight:900;
+    margin-bottom:20px;
 }
 
 .service-card h3{
-  margin:17px 0 10px;
-  font-family:Oswald,sans-serif;
-  font-size:30px;
+    font-size:22px;
+    margin-bottom:15px;
 }
 
 .service-card p{
-  color:#ced8d5;
-  line-height:1.7;
+    color:#667073;
+    line-height:1.6;
 }
 
-/* ФАКТУРЫ */
-
-.textures{
-  padding:100px 7%;
-  background:#ffffff;
-}
-
-.texture-grid{
-  margin-top:45px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.texture-card{
-  height:340px;
-  border-radius:22px;
-  overflow:hidden;
-  position:relative;
-  box-shadow:0 12px 30px rgba(0,0,0,.13);
-}
-
-.texture-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:.5s;
-}
-
-.texture-card:hover img{
-  transform:scale(1.06);
-}
-
-.texture-card:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to top,
-    rgba(0,0,0,.85),
-    rgba(0,0,0,.05) 65%
-  );
-}
-
-.texture-card span{
-  position:absolute;
-  z-index:2;
-  left:20px;
-  bottom:20px;
-  color:#fff;
-  font-family:Oswald,sans-serif;
-  font-size:28px;
-  line-height:1.1;
-}
-
-/* НАШИ РАБОТЫ */
+/* РАБОТЫ */
 
 .works{
-  padding:100px 7%;
-  background:#edf1ee;
+    background:#18292b;
+    color:#ffffff;
 }
 
-.work-grid{
-  margin-top:45px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+.works .section-text{
+    color:#c8d0d0;
 }
 
-.work-card{
-  background:#fff;
-  border-radius:22px;
-  overflow:hidden;
-  box-shadow:0 15px 35px rgba(0,0,0,.08);
+.gallery{
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
 }
 
-.work-card img{
-  width:100%;
-  height:330px;
-  object-fit:cover;
-  display:block;
+.gallery-item{
+    overflow:hidden;
+    border-radius:18px;
+    background:#263b3d;
+    min-height:270px;
 }
 
-.work-info{
-  padding:26px;
+.gallery-item img{
+    width:100%;
+    height:100%;
+    min-height:270px;
+    object-fit:cover;
+    transition:0.4s;
 }
 
-.work-info h3{
-  font-family:Oswald,sans-serif;
-  font-size:29px;
-  margin-bottom:10px;
+.gallery-item:hover img{
+    transform:scale(1.06);
 }
 
-.work-info p{
-  color:var(--gray);
-  line-height:1.6;
+/* МАТЕРИАЛЫ */
+
+.materials{
+    background:#f3f1ec;
 }
 
-/* ПОЧЕМУ НАМ ПИШУТ */
-
-.trust{
-  padding:100px 7%;
-  background:#f5f4f0;
+.material-grid{
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
 
-.trust-box{
-  margin-top:45px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.material-card{
+    background:#ffffff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
 }
 
-.trust-card{
-  background:#fff;
-  padding:32px;
-  border-radius:22px;
-  border:1px solid #e1e5e2;
+.material-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
 }
 
-.trust-icon{
-  font-size:36px;
-  margin-bottom:18px;
+.material-card h3{
+    padding:22px 22px 8px;
+    font-size:23px;
 }
 
-.trust-card h3{
-  font-family:Oswald,sans-serif;
-  font-size:29px;
-  margin-bottom:10px;
+.material-card p{
+    padding:0 22px 25px;
+    color:#697174;
+    line-height:1.55;
 }
 
-.trust-card p{
-  color:var(--gray);
-  line-height:1.65;
+/* ПОЧЕМУ МЫ */
+
+.why{
+    background:#ffffff;
 }
 
-/* CTA */
-
-.cta{
-  padding:110px 7%;
-  text-align:center;
-  color:#fff;
-
-  background:
-  linear-gradient(
-    120deg,
-    rgba(5,31,31,.94),
-    rgba(12,62,58,.88)
-  ),
-  url("https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1800");
-
-  background-size:cover;
-  background-position:center;
+.why-grid{
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
 
-.cta h2{
-  max-width:900px;
-  margin:auto;
+.why-card{
+    padding:30px;
+    background:#f7f6f2;
+    border-left:4px solid #e29a1b;
+    border-radius:0 15px 15px 0;
 }
 
-.cta p{
-  max-width:700px;
-  margin:25px auto 35px;
-  color:#d6e1de;
-  font-size:18px;
-  line-height:1.7;
+.why-card h3{
+    font-size:21px;
+    margin-bottom:10px;
 }
 
-/* КОНТАКТЫ */
-
-.contacts{
-  padding:100px 7%;
-  background:#fff;
+.why-card p{
+    color:#667073;
+    line-height:1.6;
 }
 
-.contact-grid{
-  margin-top:45px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
+/* КОНТАКТНЫЙ БЛОК */
+
+.contact-section{
+    background:
+        linear-gradient(rgba(16,35,37,0.94),rgba(16,35,37,0.94)),
+        url("фасад1.webp");
+    background-size:cover;
+    background-position:center;
+    color:#ffffff;
 }
 
-.contact-card{
-  display:
-
-
-block;
-  padding:28px;
-  background:#f6f6f3;
-  color:var(--text);
-  border-radius:20px;
-  border-left:5px solid var(--orange);
+.contact-box{
+    max-width:850px;
 }
 
-.contact-card small{
-  display:block;
-  color:#788280;
-  margin-bottom:8px;
-  font-size:11px;
-  font-weight:800;
+.contact-section .section-text{
+    color:#dce3e2;
 }
 
-.contact-card strong{
-  font-family:Oswald,sans-serif;
-  font-size:27px;
+.contact-buttons{
+    margin-top:35px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
-/* WHATSAPP */
-
-.whatsapp-float{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:2000;
-
-  background:#25d366;
-  color:#fff;
-  padding:16px 22px;
-  border-radius:50px;
-  font-weight:800;
-  box-shadow:0 15px 35px rgba(0,0,0,.25);
+.contact-info{
+    margin-top:35px;
+    display:grid;
+    gap:12px;
+    font-size:17px;
 }
 
-/* ПОДВАЛ */
-
-footer{
-  background:#132323;
-  color:#cdd7d4;
-  padding:35px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:20px;
+.contact-info a{
+    color:#ffffff;
 }
 
-footer strong{
-  color:#fff;
-  font-family:Oswald,sans-serif;
-  font-size:24px;
+/* ФУТЕР */
+
+.footer{
+    background:#101c1e;
+    color:#d6dddd;
+    padding:45px 30px;
 }
 
-footer span{
-  font-size:13px;
+.footer-inner{
+    max-width:1250px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    align-items:flex-end;
 }
 
-/* АДАПТАЦИЯ ДЛЯ ПЛАНШЕТА */
+.footer-logo{
+    color:#ffffff;
+    font-weight:900;
+    font-size:25px;
+    text-transform:uppercase;
+}
+
+.footer-text{
+    margin-top:10px;
+    color:#aebaba;
+    font-size:14px;
+}
+
+.footer-right{
+    text-align:right;
+    font-size:14px;
+    color:#aebaba;
+}
+
+/* КНОПКА WHATSAPP */
+
+.whatsapp-fixed{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    z-index:2000;
+    background:#25D366;
+    color:#ffffff;
+    padding:17px 24px;
+    border-radius:50px;
+    font-weight:900;
+    box-shadow:0 10px 30px rgba(0,0,0,0.22);
+}
+
+/* ПЛАНШЕТ */
 
 max-width:900px{
 
-  .header-menu{
-    display:none;
-  }
+    .header-inner{
+        padding:15px 20px;
+        gap:15px;
+    }
 
-  .stats-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .nav{
+        gap:15px;
+        font-size:13px;
+    }
 
-  .service-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .header-btn{
 
-  .texture-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
 
-  .work-grid{
-    grid-template-columns:1fr;
-  }
+padding:13px 17px;
+    }
 
-  .trust-box{
-    grid-template-columns:1fr;
-  }
+    .hero h1{
+        font-size:52px;
+    }
+
+    .service-grid,
+    .material-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
 
 }
 
-/* АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА */
+/* ТЕЛЕФОН */
 
-max-width:600px{
+max-width:650px{
 
-  .topline{
-    padding:10px 15px;
-    gap:8px 18px;
-    justify-content:center;
-    font-size:10px;
-  }
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
 
-  .header{
-    min-height:78px;
-    padding:12px 18px;
-    gap:12px;
-  }
+    .top-bar{
+        font-size:12px;
+        padding:12px 15px;
+    }
 
-  .logo{
-    font-size:25px;
-    line-height:.88;
-  }
+    .header{
+        position:relative;
+    }
 
-  .logo small{
-    font-size:7px;
-    letter-spacing:.8px;
-    margin-top:6px;
-  }
+    .header-inner{
+        min-height:auto;
+        padding:18px 18px;
+        display:block;
+    }
 
-  .header-button{
-    padding:13px 16px;
-    font-size:12px;
-    border-radius:13px;
-  }
+    .logo{
+        align-items:flex-start;
+    }
 
-  .hero{
-    min-height:680px;
-    background-position:62% center;
-  }
+    .logo-main{
+        font-size:30px;
+    }
 
-  .hero-content{
-    padding:70px 22px 65px;
-  }
+    .nav{
+        margin-top:20px;
+        display:grid;
+        grid-template-columns:repeat(4,auto);
+        justify-content:space-between;
+        gap:8px;
+        width:100%;
+        font-size:12px;
+    }
 
-  .hero-label{
-    font-size:10px;
-    letter-spacing:1.3px;
-    line-height:1.5;
-  }
+    .nav a{
+        white-space:nowrap;
+    }
 
-  .hero h1{
-    font-size:48px;
-    line-height:1.02;
-  }
+    .header-btn{
+        display:block;
+        margin-top:18px;
+        text-align:center;
+        padding:15px 15px;
+        width:100%;
+    }
 
-  .hero-text{
-    font-size:16px;
-    line-height:1.65;
-    margin:22px 0;
-  }
+    .hero{
+        min-height:auto;
+        background-position:58% center;
+    }
 
-  .hero-buttons{
-    display:grid;
-    grid-template-columns:1fr;
-  }
+    .hero-inner{
+        padding:75px 22px 65px;
+    }
 
-  .btn-main,
-  .btn-secondary{
-    width:100%;
-    text-align:center;
-    padding:17px 15px;
-    font-size:14px;
-  }
+    .hero-content{
+        max-width:100%;
+    }
 
-  .hero-points{
-    margin-top:30px;
-    font-size:13px;
-    gap:11px;
-  }
+    .hero-location{
+        font-size:11px;
+        line-height:1.5;
+        letter-spacing:2px;
+    }
 
-  .stats,
-  .services,
-  .textures,
-  .works,
-  .trust,
-  .contacts{
-    padding:70px 22px;
-  }
+    .hero h1{
+        font-size:43px;
+        line-height:1.05;
+        letter-spacing:-0.5px;
+    }
 
-  h2{
-    font-size:42px;
-  }
+    .hero-text{
+        font-size:17px;
+        line-height:1.65;
+    }
 
-  .section-description{
-    font-size:16px;
-  }
+    .hero-buttons{
+        display:grid;
+        grid-template-columns:1fr;
+    }
 
-  .stats-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:22px 15px;
-    margin-top:35px;
-  }
+    .btn-main,
+    .btn-second{
+        text-align:center;
+        padding:18px 15px;
+    }
 
-  .stat strong{
-    font-size:47px;
-  }
+    .hero-list{
+        font-size:14px;
+        line-height:1.45;
+    }
 
-  .stat span{
-    font-size:9px;
-  }
+    .section{
+        padding:65px 20px;
+    }
 
-  .service-grid{
-    grid-template-columns:1fr;
-    margin-top:35px;
-  }
+    .section-title{
+        font-size:35px;
+    }
 
-  .service-card{
-    min-height:auto;
-    padding:25px;
-  }
+    .section-text{
+        font-size:16px;
+    }
 
-  .service-card h3{
-    font-size:28px;
-  }
+    .service-grid,
+    .material-grid,
+    .why-grid,
+    .gallery{
+        grid-template-columns:1fr;
+    }
 
-  .texture-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-    margin-top:35px;
-  }
+    .service-card{
+        padding:28px 22px;
+    }
 
-  .texture-card{
-    height:240px;
-    border-radius:18px;
-  }
+    .gallery-item,
+    .gallery-item img{
+        min-height:240px;
+        height:240px;
+    }
 
-  .texture-card span{
-    left:13px;
-    bottom:14px;
-    font-size:21px;
-  }
+    .material-card img{
+        height:240px;
+    }
 
-  .work-grid{
-    margin-top:35px;
-    gap:18px;
-  }
+    .contact-buttons{
+        display:grid;
+        grid-template-columns:1fr;
+    }
 
-  .work-card img{
-    height:280px;
-  }
+    .contact-buttons a{
+        text-align:center;
+    }
 
-  .work-info{
-    padding:22px;
-  }
+    .contact-info{
+        font-size:15px;
+    }
 
-  .work-info h3{
-    font-size:27px;
-  }
+    .footer{
+        padding:35px 20px 100px;
+    }
 
-  .trust-box{
-    margin-top:35px;
-  }
+    .footer-inner{
+        display:block;
+    }
 
-  .trust-card{
-    padding:25px;
-  }
+    .footer-right{
+        text-align:left;
+        margin-top:25px;
+    }
 
-  .trust-card h3{
-    font-size:27px;
-  }
-
-  .cta{
-    padding:75px 22px;
-  }
-
-  .cta p{
-    font-size:16px;
-  }
-
-  .contact-grid{
-    grid-template-columns:1fr;
-    margin-top:35px;
-  }
-
-  .contact-card{
-    padding:22px;
-  }
-
-  .contact-card strong{
-    font-size:23px;
-  }
-
-  .whatsapp-float{
-    right:15px;
-    bottom:15px;
-    padding:15px 18px;
-    font-size:14px;
-  }
-
-  footer{
-    padding:30px 22px 90px;
-    display:block;
-  }
-
-  footer strong,
-  footer span{
-    display:block;
-    margin-bottom:10px;
-  }
+    .whatsapp-fixed{
+        right:18px;
+        bottom:18px;
+        padding:15px 20px;
+        font-size:14px;
+    }
 
 }
 
@@ -849,404 +696,386 @@ max-width:600px{
 
 <body>
 
-<div class="topline">
-  <div>📍 Барнаул и Алтайский край</div>
-  <div>🟢 Работаем бригадой</div>
-
-
-<div>📞 Прямой контакт с мастером</div>
+<div class="top-bar">
+    ☎ Прямой контакт с мастером
 </div>
 
 <header class="header">
+    <div class="header-inner">
 
-  <a href="#" class="logo">
-    МОКРЫЙ
-ФАСАД АЛТАЯ
-    <small>УТЕПЛЕНИЕ · ОТДЕЛКА · ДЕКОР</small>
-  </a>
+        <a href="#" class="logo">
+            <div class="logo-main">МОКРЫЙ
+ФАСАД
+АЛТАЯ</div>
+            <div class="logo-sub">УТЕПЛЕНИЕ · ОТДЕЛКА · ДЕКОР</div>
+        </a>
 
-  <nav class="header-menu">
-    <a href="#services">Услуги</a>
-    <a href="#textures">Фактуры</a>
-    <a href="#works">Работы</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
+        <nav class="nav">
+            <a href="#services">Услуги</a>
+            <a href="#materials">Фактуры</a>
+            <a href="#works">Работы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
 
-  <a href="#contacts" class="header-button">
-    Рассчитать
-  </a>
+        <a class="header-btn" href="#contacts">
+            Рассчитать
+        </a>
 
+    </div>
 </header>
 
 <section class="hero">
 
-  <div class="hero-content">
+    <div class="hero-inner">
 
-    <div class="hero-label">
-      МОКРЫЙ ФАСАД · БАРНАУЛ · АЛТАЙСКИЙ КРАЙ
+        <div class="hero-content">
+
+            <div class="hero-location">
+                МОКРЫЙ ФАСАД · БАРНАУЛ · АЛТАЙСКИЙ КРАЙ
+            </div>
+
+            <h1>
+                МОКРЫЕ
+
+                ФАСАДЫ В
+
+                БАРНАУЛЕ И
+
+                АЛТАЙСКОМ
+
+                КРАЕ
+            </h1>
+
+            <div class="hero-text">
+                Утепляем и отделываем дома по технологии мокрого фасада.
+                Утепление, армирование, декоративная штукатурка
+                «Короед» и «Шуба», покраска и фасадный декор.
+            </div>
+
+
+<div class="hero-buttons">
+
+                <a class="btn-main"
+                   href="https://wa.me/79635734225">
+                    💬 РАССЧИТАТЬ В WHATSAPP
+                </a>
+
+                <a class="btn-second" href="#works">
+                    📷 НАШИ РАБОТЫ
+                </a>
+
+            </div>
+
+            <div class="hero-list">
+                <div>Работаем напрямую без посредников</div>
+                <div>Помогаем рассчитать объём работ</div>
+                <div>Работаем в Барнауле и по Алтайскому краю</div>
+                <div>Можно отправить фото дома в WhatsApp</div>
+            </div>
+
+        </div>
+
     </div>
-
-    <h1>
-      МОКРЫЕ ФАСАДЫ
-
-      <span>В БАРНАУЛЕ И АЛТАЙСКОМ КРАЕ</span>
-    </h1>
-
-    <p class="hero-text">
-      Утепляем и отделываем дома по технологии мокрого фасада.
-      Утепление, армирование, декоративная штукатурка
-      «Короед» и «Шуба», покраска и фасадный декор.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a class="btn-main"
-         href="https://wa.me/79635732425"
-         target="_blank">
-        💬 РАССЧИТАТЬ В WHATSAPP
-      </a>
-
-      <a class="btn-secondary" href="#works">
-        📷 НАШИ РАБОТЫ
-      </a>
-
-    </div>
-
-    <div class="hero-points">
-      <div>Работаем напрямую без посредников</div>
-      <div>Помогаем рассчитать объём работ</div>
-      <div>Работаем в Барнауле и по Алтайскому краю</div>
-      <div>Можно отправить фото дома в WhatsApp</div>
-    </div>
-
-  </div>
 
 </section>
 
-<section class="stats">
+<section class="section services" id="services">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="section-label">О БРИГАДЕ</div>
+        <div class="section-label">ЧЕМ ЗАНИМАЕМСЯ</div>
 
-    <h2>
-      ОДНА СПЕЦИАЛИЗАЦИЯ.
+        <h2 class="section-title">
+            УСЛУГИ ПО МОКРОМУ ФАСАДУ
+        </h2>
 
-      МОКРЫЙ ФАСАД.
-    </h2>
+        <p class="section-text">
+            Выполняем работы по утеплению и декоративной отделке фасадов
+            частных домов в Барнауле и Алтайском крае.
+        </p>
 
-    <p class="section-description">
-      Не распыляемся на десятки разных строительных услуг.
-      Основное направление — утепление и декоративная отделка фасадов.
-    </p>
+        <div class="service-grid">
 
-    <div class="stats-grid">
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>Утепление фасада</h3>
+                <p>
+                    Подготовка поверхности и утепление фасада
+                    по технологии мокрого фасада.
+                </p>
+            </div>
 
-      <div class="stat">
-        <strong>100%</strong>
-        <span>специализация на фасадах</span>
-      </div>
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>Армирование</h3>
+                <p>
+                    Армирующий слой и подготовка фасада
+                    перед декоративной отделкой.
+                </p>
+            </div>
 
-      <div class="stat">
-        <strong>1</strong>
-        <span>бригада на объекте</span>
-      </div>
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>Короед и Шуба</h3>
+                <p>
+                    Нанесение декоративной штукатурки
+                    с аккуратной фактурой.
+                </p>
+            </div>
 
-      <div class="stat">
-        <strong>0</strong>
-        <span>посредников</span>
-      </div>
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>Покраска фасада</h3>
+                <p>
+                    Покраска и обновление декоративного
+                    покрытия фасада.
+                </p>
+            </div>
 
-      <div class="stat">
-        <strong>14</strong>
-        <span>дней средний срок работ</span>
-      </div>
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>Фасадный декор</h3>
+                <p>
+                    Декоративные элементы и аккуратное
+                    оформление фасада.
+                </p>
+            </div>
 
-    </div>
+            <div class="service-card">
+                <div class="service-number">06</div>
+                <h3>Расчёт работ</h3>
+                <p>
+                    Отправьте фотографии дома и размеры,
+                    поможем предварительно рассчитать объём.
+                </p>
+            </div>
 
-  </div>
-
-</section>
-
-<section class="services" id="services">
-
-  <div class="container">
-
-    <div class="section-label">НАШИ УСЛУГИ</div>
-
-    <h2>ВСЁ ДЛЯ МОКРОГО ФАСАДА</h2>
-
-    <div class="service-grid">
-
-      <div class="service-card">
-        <div class="service-number">01</div>
-        <h3>Подготовка</h3>
-        <p>Подготовка поверхности перед монтажом фасадной системы.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">02</div>
-        <h3>Утепление</h3>
-        <p>Монтаж утеплителя и подготовка фасада к следующим слоям.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">03</div>
-        <h3>Армирование</h3>
-        <p>Армирующий слой, фасадная сетка и обработка поверхности.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">04</div>
-        <h3>Короед</h3>
-        <p>Декоративная штукатурка с выразительной фасадной фактурой.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">05</div>
-        <h3>Шуба</h3>
-        <p>Декоративное покрытие с равномерной объёмной текстурой.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">06</div>
-        <h3>Покраска</h3>
-        <p>Финишная окраска и завершение внешнего вида фасада.</p>
-      </div>
+        </div>
 
     </div>
 
-  </div>
+</section>
+
+<section class="section works" id="works">
+
+    <div class="container">
+
+        <div class="section-label">НАШИ РАБОТЫ</div>
+
+        <h2 class="section-title">
+            РЕАЛЬНЫЕ ФАСАДЫ
+        </h2>
+
+        <p class="section-text">
+            Примеры выполненных и текущих работ.
+        </p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="фасад1.webp" alt="Мокрый фасад">
+            </div>
+
+            <div class="gallery-item">
+                <img src="фасад2.jpg" alt="Отделка фасада">
+            </div>
+
+            <div class="gallery-item">
+                <img src="фасад3.webp" alt="Фасад дома">
+            </div>
+
+            <div class="gallery-item">
+                <img src="фасад4.jpg" alt="Работы по фасаду">
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="textures" id="textures">
+<section class="section materials" id="materials">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="section-label">ВИДЫ ФАКТУР</div>
+        <div class="section-label">ФАКТУРЫ</div>
 
-    <h2>ВЫБЕРИТЕ ФАКТУРУ
-ВАШЕГО ФАСАДА</h2>
+        <h2 class="section-title">
+            ДЕКОРАТИВНАЯ ОТДЕЛКА
+        </h2>
 
-    <p class="section-description">
-      Разная фактура по-разному выглядит на солнце, вблизи и издалека.
-    </p>
-
-    <div class="texture-grid">
-
-      <div class="texture-card">
-        <img src="короед.webp" alt="Короед">
+        <p class="secti
 Переслать по WhatsApp
 Переслать по WhatsApp
 api.whatsapp.com
 
 
-<span>Короед</span>
-      </div>
+on-text">
+            Выберите подходящую фактуру для вашего фасада.
+        </p>
 
-      <div class="texture-card">
-        <img src="шуба.webp" alt="Шуба">
-        <span>Шуба</span>
-      </div>
+        <div class="material-grid">
 
-      <div class="texture-card">
-        <img src="гладкая.webp" alt="Гладкая фактура">
-        <span>Гладкая
-фактура</span>
-      </div>
+            <div class="material-card">
+                <img src="гладка.webp" alt="Гладкая фактура">
+                <h3>Гладкая фактура</h3>
+                <p>Аккуратная современная поверхность фасада.</p>
+            </div>
 
-      <div class="texture-card">
-        <img src="крупная фак.webp" alt="Крупная фактура">
-        <span>Крупная
-фактура</span>
-      </div>
+            <div class="material-card">
+                <img src="короед.webp" alt="Короед">
+                <h3>Короед</h3>
+                <p>Популярная декоративная фактура для фасадов.</p>
+            </div>
 
-    </div>
+            <div class="material-card">
+                <img src="шуба.webp" alt="Шуба">
+                <h3>Шуба</h3>
+                <p>Выразительная декоративная фактура фасада.</p>
+            </div>
 
-  </div>
-
-</section>
-
-<section class="works" id="works">
-
-  <div class="container">
-
-    <div class="section-label">РЕАЛЬНЫЕ РАБОТЫ</div>
-
-    <h2>НАШИ ОБЪЕКТЫ</h2>
-
-    <p class="section-description">
-      Фотографии выполненных работ нашей бригады.
-    </p>
-
-    <div class="work-grid">
-
-      <div class="work-card">
-        <img src="фасад1.webp" alt="Утепление и отделка фасада">
-
-        <div class="work-info">
-          <h3>Утепление и отделка</h3>
-          <p>Комплексные работы по устройству мокрого фасада.</p>
         </div>
-      </div>
 
-      <div class="work-card">
-        <img src="фасад2.jpg" alt="Декоративный Короед">
+    </div>
 
-        <div class="work-info">
-          <h3>Декоративный «Короед»</h3>
-          <p>Финишная декоративная отделка фасада.</p>
+</section>
+
+<section class="section why">
+
+    <div class="container">
+
+        <div class="section-label">ПОЧЕМУ НАМ ПИШУТ</div>
+
+        <h2 class="section-title">
+            ПРОСТО И НАПРЯМУЮ
+        </h2>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <h3>📷 Отправьте фото дома</h3>
+                <p>
+                    Можно начать с обычных фотографий дома
+                    в WhatsApp.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>📐 Поможем с расчётом</h3>
+                <p>
+                    Подскажем, какие данные нужны для
+                    предварительной оценки.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>🤝 Прямой контакт</h3>
+                <p>
+                    Связь напрямую с бригадой,
+                    без менеджеров и посредников.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <h3>📍 Барнаул и Алтайский край</h3>
+                <p>
+                    Выполняем работы в Барнауле
+                    и по Алтайскому краю.
+                </p>
+            </div>
+
         </div>
-      </div>
 
-      <div class="work-card">
-        <img src="фасад3.webp" alt="Фактура Шуба">
+    </div>
 
-        <div class="work-info">
-          <h3>Фактура «Шуба»</h3>
-          <p>Декоративное покрытие и покраска фасада.</p>
+</section>
+
+<section class="section contact-section" id="contacts">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="section-label">
+                НУЖЕН МОКРЫЙ ФАСАД?
+            </div>
+
+            <h2 class="section-title">
+                ОТПРАВЬТЕ ФОТО ДОМА — ОБСУДИМ ВАШ ФАСАД
+            </h2>
+
+            <p class="section-text">
+                Напишите нам в WhatsApp и отправьте фотографии дома.
+                Если есть размеры — тоже отправляйте.
+                Поможем предварительно сориентироваться по объёму работ.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a class="btn-main"
+                   href="https://wa.me/79635734225">
+                    💬 НАПИСАТЬ В WHATSAPP
+                </a>
+
+                <a class="btn-second"
+                   href="tel:+79635734225">
+                    📞 ПОЗВОНИТЬ
+                </a>
+
+            </div>
+
+            <div class="contact-info">
+
+                <div>
+                    📍 <b>ГЕОГРАФИЯ РАБОТ:</b>
+                    Барнаул и Алтайский край
+                </div>
+
+                <div>
+                    📞 <a href="tel:+79635734225">
+                    +7 963 573-24-25
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-      </div>
 
     </div>
 
-  </div>
-
 </section>
 
-<section class="trust">
+<footer class="footer">
 
-  <div class="container">
+    <div class="footer-inner">
 
-    <div class="section-label">ПОЧЕМУ НАМ ПИШУТ</div>
+        <div>
+            <div class="footer-logo">
+                МОКРЫЙ ФАСАД АЛТАЯ
+            </div>
 
-    <h2>ПРОСТО И НАПРЯМУЮ</h2>
+            <div class="footer-text">
+                Утепление и отделка фасадов в Барнауле
+                и Алтайском крае.
+            </div>
+        </div>
 
-    <div class="trust-box">
-
-      <div class="trust-card">
-        <div class="trust-icon">📷</div>
-        <h3>Отправьте фото дома</h3>
-        <p>Можно начать с обычных фотографий дома в WhatsApp.</p>
-      </div>
-
-      <div class="trust-card">
-        <div class="trust-icon">📐</div>
-        <h3>Поможем с расчётом</h3>
-        <p>Подскажем, какие данные нужны для предварительной оценки.</p>
-      </div>
-
-      <div class="trust-card">
-        <div class="trust-icon">🤝</div>
-        <h3>Прямой контакт</h3>
-        <p>Без менеджеров и посредников — связь напрямую с бригадой.</p>
-      </div>
+        <div class="footer-right">
+            © 2026 Мокрый Фасад Алтая
+        </div>
 
     </div>
-
-  </div>
-
-</section>
-
-<section class="cta">
-
-  <div class="container">
-
-    <div class="section-label">НУЖЕН МОКРЫЙ ФАСАД?</div>
-
-    <h2>
-      ОТПРАВЬТЕ ФОТО ДОМА —
-
-      ОБСУДИМ ВАШ ФАСАД
-    </h2>
-
-    <p>
-      Напишите нам в WhatsApp и отправьте фотографии дома.
-      Если есть размеры — тоже отправляйте. Поможем предварительно
-      сориентироваться по объёму работ.
-    </p>
-
-    <a class="btn-main"
-       href="https://wa.me/79635732425"
-       target="_blank">
-      💬 НАПИСАТЬ В WHATSAPP
-    </a>
-
-  </div>
-
-</section>
-
-<section class="contacts" id="contacts">
-
-  <div class="container">
-
-    <div class="section-label">КОНТАКТЫ</div>
-
-    <h2>СВЯЗАТЬСЯ С НАМИ</h2>
-
-    <div class="contact-grid">
-
-      <a class="contact-card"
-         href="https://wa.me/79635732425"
-         target="_blank">
-
-        <small>САМЫЙ БЫСТРЫЙ СПОСОБ</small>
-        <strong>💬 Написать в WhatsApp</strong>
-
-      </a>
-
-      <a class="contact-card"
-         href="tel:+79635732425">
-
-        <small>ПОЗВОНИТЕ НАПРЯМУЮ</small>
-        <strong>📞 +7 963 573-24-25</strong>
-
-      </a>
-
-      <a class="contact-card"
-         href="mailto:husenjonmuhammad@gmail.com">
-
-        <small>ЭЛЕКТРОННАЯ ПОЧТА</small>
-        <strong>✉ Написать письмо</strong>
-
-      </a>
-
-      <div class="contact-card">
-
-        <small>ГЕОГРАФИЯ РАБОТ</small>
-        <strong>📍 Барнаул и Алтайский край</strong>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<a class="whatsapp-float"
-   href="https://wa.me/79635732425"
-   target="_blank">
-  💬 WhatsApp
-</a>
-
-<footer>
-
-  <strong>МОКРЫЙ ФАСАД АЛТАЯ</strong>
-
-  <span>
-    Утепление и отделка фасадов в Барнауле и Алтайском крае
-  </span>
-
-  <span>© 2026</span>
 
 </footer>
 
+<a class="whatsapp-fixed"
+   href="https://wa.me/79635734225">
+    💬 WhatsApp
+</a>
+
 </body>
 </html>
-Переслать по WhatsApp
-Переслать по WhatsApp
+Share on WhatsApp
 api.whatsapp.com
 
 
